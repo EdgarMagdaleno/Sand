@@ -8,7 +8,7 @@ using Lidgren.Network;
 namespace Sand
 {
 	/// <summary>
-	/// This is the main type for your game.
+	/// ALGO FINE
 	/// </summary>
 	public class GameStart : Game
 	{
