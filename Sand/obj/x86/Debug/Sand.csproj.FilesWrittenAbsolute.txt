@@ -9,3 +9,14 @@
 /home/edgar/Sand/Sand/bin/Debug/OpenTK.dll
 /home/edgar/Sand/Sand/bin/Debug/NVorbis.dll
 /home/edgar/Sand/Sand/bin/Debug/Lidgren.Network.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/obj/x86/Debug/.NETFramework,Version=v4.6.1.AssemblyAttribute.cs
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/obj/x86/Debug/Sand.Icon.ico
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/OpenTK.dll.config
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/Sand.exe.mdb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/Sand.exe
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/obj/x86/Debug/Sand.exe
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/obj/x86/Debug/Sand.exe.mdb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/MonoGame.Framework.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/OpenTK.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/NVorbis.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/Lidgren.Network.dll
