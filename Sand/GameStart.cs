@@ -7,9 +7,6 @@ using Lidgren.Network;
 
 namespace Sand
 {
-	/// <summary>
-	/// ALGO FINE
-	/// </summary>
 	public class GameStart : Game
 	{
 		GraphicsDeviceManager graphics;
