@@ -5,10 +5,11 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sand Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sand.git Status">
     <Files>
-      <File FileName="Sand\GameStart.cs" Line="44" Column="28" />
-      <File FileName="Sand Status" />
+      <File FileName="Sand\GameStart.cs" Line="14" Column="8" />
+      <File FileName="Sand\Entity.cs" Line="25" Column="4" />
+      <File FileName="Sand.git Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

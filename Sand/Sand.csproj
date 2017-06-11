@@ -52,6 +52,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameStart.cs" />
+    <Compile Include="Entity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon.png" />

@@ -3,7 +3,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Lidgren.Network;
+using System.Collections.Generic;
 
 namespace Sand
 {
@@ -11,10 +11,13 @@ namespace Sand
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch sprite_batch;
+		List<Entity> entities;
 
 		public GameStart()
 		{
 			graphics = new GraphicsDeviceManager (this);
+			entities = new List<Entity>();
+
 			Content.RootDirectory = "Content";
 		}
 			
@@ -35,14 +38,10 @@ namespace Sand
 			
 		protected override void Update (GameTime gameTime)
 		{
-			// For Mobile devices, this logic will close the Game when the Back button is pressed
-			// Exit() is obsolete on iOS
-			#if !__IOS__ &&  !__TVOS__
-			if (GamePad.GetState (PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState ().IsKeyDown (Keys.Escape))
-				Exit ();
-			#endif
-            //QUE ONDA WEE 
-			// TODO: Add your update logic here
+			foreach (Entity e in entities)
+			{
+				e.update(gameTime);
+			}
             
 			base.Update (gameTime); 
 		}
@@ -50,8 +49,11 @@ namespace Sand
 		protected override void Draw (GameTime gameTime)
 		{
 			graphics.GraphicsDevice.Clear (Color.CornflowerBlue);
-            
-			//TODO: Add your drawing code here
+
+			foreach (Entity e in entities)
+			{
+				e.draw(sprite_batch);
+			}
             
 			base.Draw (gameTime);
 		}
