@@ -13,6 +13,7 @@ namespace Sand
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch sprite_batch;
+		long time;
 		public static List<Entity> entities;
 		public static Texture2D bullet_texture;
 		public static Texture2D player_texture;
@@ -48,6 +49,7 @@ namespace Sand
 			// TODO: Add your initialization logic here
 			A=1;B=4;
 			C = 4;D=1;
+			time = 0;
 			base.Initialize ();
 		}
 			
@@ -83,6 +85,16 @@ namespace Sand
 			{
 				e.update(gameTime);
 
+				if (e.GetType() == typeof(Player)) {
+					Player p = (Player)e;
+					if (p.life == 0) {
+						entities.Remove(p);
+						time = gameTime.TotalGameTime.Milliseconds;
+					}
+					if (gameTime.TotalGameTime.Milliseconds > 2000)
+						Exit();
+				}
+
 				foreach (Entity e2 in entities.ToArray())
 					if (e.first_player != e2.first_player && (e.GetType() == typeof(Bullet) && e2.GetType() == typeof(Player)) && e.check_collision(e2)) {
 						entities.Remove(e);
@@ -101,9 +113,7 @@ namespace Sand
 
 			sprite_batch.Draw (background, GraphicsDevice.Viewport.Bounds, Color.White);
 			foreach (Entity e in entities.ToArray())
-			{//
 				e.draw(sprite_batch);
-			}
            
 			base.Draw (gameTime);
 			sprite_batch.End();
