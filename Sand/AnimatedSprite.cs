@@ -36,7 +36,7 @@ namespace Sand
 				currentFrame = 0;
 		}
 
-		public void Draw(SpriteBatch spriteBatch)
+		public void Draw(SpriteBatch spriteBatch ,int  x,int  y)
 		{
 			width = Texture.Width / Columns;
 			height = Texture.Height / Rows;
@@ -44,63 +44,12 @@ namespace Sand
 			int column = currentFrame % Columns;
 
 			Rectangle sourceRectangle = new Rectangle(width * column, height * row, width, height);
-			Rectangle destinationRectangle = new Rectangle((int)Vec.X, (int)Vec.Y, width, height);
+			Rectangle destinationRectangle = new Rectangle(x, y, width, height);
 
 			spriteBatch.Begin();
 			spriteBatch.Draw(Texture, destinationRectangle, sourceRectangle, Color.White);
 			spriteBatch.End();
 		}
-
-		private bool Move(int menor,int mayor , int comprobar, int dimension, ref bool x){
-			if (comprobar<=menor) {
-				x = false;
-				return x;
-			} else {
-				if (comprobar>=(mayor-dimension)) {
-					x = true;
-					return x;
-				} else {
-					return x;
-				}
-			}
-
-		}
-
-
-		public void UpdateVec(int menorX,int menorY,int mayorX,int mayorY,int Rate1,int Rate2){
-
-			if (Move(menorX, mayorX,(int)Math.Ceiling(Vec.X),width,ref algo)== false) {
-				if (Move(menorY,mayorY,(int)Math.Ceiling(Vec.Y),height,ref algo2)==false) {
-					CambioX +=  Rate1;
-					CambioY += Rate2;
-					Vec.X=CambioX;
-					Vec.Y = CambioY;
-				} else {
-					CambioX +=  Rate1;
-					CambioY -= Rate2;
-					Vec.X=CambioX;
-					Vec.Y = CambioY;
-				}
-			} else {
-				if (Move(0,600,(int)Math.Ceiling(Vec.Y),height,ref algo2)==false) {
-					CambioX -=  Rate1;
-					CambioY += Rate2;
-					Vec.X=CambioX;
-					Vec.Y = CambioY;
-				} else {
-					CambioX -=  Rate1;
-					CambioY -= Rate2;
-					Vec.X=CambioX;
-					Vec.Y = CambioY;
-				}
-			}
-		}
-
-
-
-
-
-
 	}
 }
 
