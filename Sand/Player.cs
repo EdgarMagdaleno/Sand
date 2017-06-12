@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using Microsoft.Xna.Framework.Audio;
+
 namespace Sand
 {
 	public class Player : Entity
@@ -14,9 +16,12 @@ namespace Sand
 		PlayerIndex player_index;
 		GamePadCapabilities capabilities;
 		public int life;
-
-		public Player(Vector2 position, bool from_first_player) : base(Engine.player_texture, position)
+		public static SoundEffect shoot;
+		public static SoundEffectInstance Instance;
+		public Player(Vector2 position, bool from_first_player, SoundEffect sh) : base(Engine.player_texture, position,true)
 		{
+			
+			shoot = sh;
 			life = 100;
 			first_player = from_first_player;
 			speed = 2.0f;
@@ -56,11 +61,13 @@ namespace Sand
 
 		public void attempt_basic(GameTime gametime)
 		{
+			SoundEffect.MasterVolume = 0.25f;
 			double current_time = gametime.TotalGameTime.TotalMilliseconds;
 			if (current_time - last_time > basic_delay)
 			{
 				last_time = current_time;
 				Engine.entities.Add(new Bullet(position, rotation, first_player));
+				shoot.CreateInstance ().Play ();
 			}
 		}
 

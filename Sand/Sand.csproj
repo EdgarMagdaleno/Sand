@@ -53,13 +53,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="AnimatedSprite.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Bullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon.png" />
     <None Include="packages.config" />
+    <None Include="Content\Slabo27px-Regular-24.spritefont" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />

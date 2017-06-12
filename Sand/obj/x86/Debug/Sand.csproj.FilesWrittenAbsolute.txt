@@ -41,3 +41,30 @@
 /home/poi/Documents/c#/Sand/Sand/bin/Debug/Sand.exe
 /home/edgar/Sand/Sand/bin/Debug/Content/lifebar.xnb
 /home/poi/Documents/c#/Sand/Sand/bin/Debug/Content/lifebar.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/obj/x86/Debug/.NETFramework,Version=v4.6.1.AssemblyAttribute.cs
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/obj/x86/Debug/Sand.Icon.ico
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/OpenTK.dll.config
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/bullet.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/lifebar.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/player.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Sand.exe.mdb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Sand.pdb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Sand.exe
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/obj/x86/Debug/Sand.exe
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/obj/x86/Debug/Sand.exe.mdb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/obj/x86/Debug/Sand.pdb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/MonoGame.Framework.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/OpenTK.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/NVorbis.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Lidgren.Network.dll
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/Space Battle (Game Music).ogg
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/Space Battle (Game Music).xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/Slabo27px-Regular-24.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/planet1.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/shot.ogg
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/shot.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/tAA.ogg
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/tAA.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/ship2.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/shoot2.xnb
+/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/ship12.xnb
