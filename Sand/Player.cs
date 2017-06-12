@@ -69,7 +69,16 @@ namespace Sand
 		}
 
 		public override void draw(SpriteBatch sprite_batch){
-			sprite_batch.Draw(Engine.lifebar_texture, new Vector2(20 * Engine.scale.X, 20 * Engine.scale.Y), null, null, null, 0, new Vector2(Engine.screen_width / 2.05f, 1));
+			float length = (Engine.screen_width / 2 - 40 * Engine.scale.X) * (life / 100f);
+			Vector2 lifebar_position = new Vector2(20 * Engine.scale.X, 20 * Engine.scale.Y);
+
+			if (!first_player)
+			{
+				length = (Engine.screen_width / 2 - 40 * Engine.scale.X) * (life / 100f);
+				lifebar_position = new Vector2(Engine.screen_width - 20 - length, 20 * Engine.scale.Y);
+			}
+
+			sprite_batch.Draw(Engine.lifebar_texture, lifebar_position, null, null, null, 0, new Vector2(length, 1));
 			base.draw(sprite_batch);
 		}
 	}
