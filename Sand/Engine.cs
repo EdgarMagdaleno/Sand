@@ -66,8 +66,11 @@ namespace Sand
 				e.update(gameTime);
 
 				foreach (Entity e2 in entities.ToArray())
-					if ((e.GetType() == typeof(Bullet) & e2.GetType() == typeof(Player)) & e.check_collision(e2))
+					if (e.first_player != e2.first_player && (e.GetType() == typeof(Bullet) && e2.GetType() == typeof(Player)) && e.check_collision(e2)) {
 						entities.Remove(e);
+						Player pe = (Player) e2;
+						pe.life -= 10;
+					}
 			}
             
 			base.Update (gameTime); 

@@ -13,7 +13,7 @@ namespace Sand
 		long basic_delay = 250;
 		PlayerIndex player_index;
 		GamePadCapabilities capabilities;
-		int life;
+		public int life;
 
 		public Player(Vector2 position, bool from_first_player) : base(Engine.player_texture, position)
 		{
@@ -50,6 +50,7 @@ namespace Sand
 			position += final_vector;
 			past_vector = final_vector * 0.9f;
 			calculate_rotation(final_vector);
+			check_bounds();
 			base.update(gametime);
 		}
 
@@ -60,6 +61,29 @@ namespace Sand
 			{
 				last_time = current_time;
 				Engine.entities.Add(new Bullet(position, rotation, first_player));
+			}
+		}
+
+		public void check_bounds()
+		{
+			if (position.X + (texture.Width / 2f) * Engine.scale.X > Engine.screen_width)
+			{
+				position.X = Engine.screen_width - ((texture.Width / 2f) - 1) * Engine.scale.X;
+			}
+
+			if (position.X - (texture.Width / 2f) * Engine.scale.X < 0)
+			{
+				position.X = 1 + (texture.Width / 2f) * Engine.scale.X;
+			}
+
+			if (position.Y + (texture.Height / 2f) * Engine.scale.Y > Engine.screen_height)
+			{
+				position.Y = Engine.screen_height - ((texture.Height / 2f) - 1) * Engine.scale.Y;
+			}
+
+			if (position.Y - (texture.Height / 2f) * Engine.scale.Y < 0)
+			{
+				position.Y = 1 + (texture.Height / 2f) * Engine.scale.Y;
 			}
 		}
 

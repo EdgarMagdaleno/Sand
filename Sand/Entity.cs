@@ -27,8 +27,15 @@ namespace Sand
 		}
 
 		public bool check_collision(Entity entity) {
-			return (this.first_player != entity.first_player & this.position.X < entity.position.X + entity.texture.Width + origin.X & this.position.X + this.texture.Width + origin.X > entity.position.X &
-					this.position.Y < entity.position.Y + entity.texture.Height + origin.Y & this.texture.Height + origin.Y + this.position.Y > entity.position.Y);
+			Rectangle rect1 = new Rectangle((int) (position.X - origin.X), (int) (position.Y - origin.Y), (int) (texture.Width * Engine.scale.X), (int) (texture.Height * Engine.scale.Y));
+			Rectangle rect2 = new Rectangle((int) (entity.position.X - entity.origin.X) , (int) (entity.position.Y - entity.origin.Y), (int) (entity.texture.Width * Engine.scale.X), (int)(entity.texture.Height * Engine.scale.Y));
+
+			if (rect1.X < rect2.X + rect2.Width && rect1.X + rect1.Width > rect2.X && rect1.Y < rect2.Y + rect2.Height && rect1.Height + rect1.Y > rect2.Y)
+			{
+				return true;
+			}
+
+			return false;
 		}
 
 		public virtual void update(GameTime gametime)
