@@ -68,3 +68,7 @@
 /home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/ship2.xnb
 /home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/shoot2.xnb
 /home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/bin/Debug/Content/ship12.xnb
+/home/poi/Documents/c#/Sand/Sand/bin/Debug/Content/planet1.xnb
+/home/poi/Documents/c#/Sand/Sand/bin/Debug/Content/shot.xnb
+/home/poi/Documents/c#/Sand/Sand/bin/Debug/Content/song.ogg
+/home/poi/Documents/c#/Sand/Sand/bin/Debug/Content/song.xnb

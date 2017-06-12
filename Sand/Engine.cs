@@ -62,7 +62,7 @@ namespace Sand
 			lifebar_texture = Content.Load<Texture2D>("lifebar");
 			background = Content.Load<Texture2D> ("planet1");
 			//song = Content.Load<Song> ("Space Battle (Game Music)");
-			song = Content.Load<Song> ("tAA");
+			//song = Content.Load<Song> ("song");
 			shot=Content.Load<SoundEffect>("shot");
 			MediaPlayer.Play (song);
 			MediaPlayer.IsRepeating = true;

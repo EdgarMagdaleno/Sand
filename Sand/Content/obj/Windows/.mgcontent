@@ -4,14 +4,11 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/player.png</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/bullet.png</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/lifebar.png</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/Space Battle (Game Music).mp3</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/planet1.jpg</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/shot.mp3</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/tAA.mp3</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/ship12.png</File>
-    <File>/home/Alejanky/Projects/EdgarMagdaleno/Sand/Sand/Content/shoot2.png</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/player.png</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/bullet.png</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/lifebar.png</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/planet1.jpg</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/shot.mp3</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/song.mp3</File>
   </SourceFiles>
 </SourceFileCollection>
