@@ -11,23 +11,30 @@ namespace Sand
 		public Vector2 past_vector;
 		double last_time;
 		long basic_delay = 250;
+		PlayerIndex player_index;
+		GamePadCapabilities capabilities;
 
 		public Player(Vector2 position, bool from_first_player) : base(Engine.player_texture, position)
 		{
+			first_player = from_first_player;
 			speed = 2.0f;
 			rotation = 0f;
 			past_vector = Vector2.Zero;
 			last_time = 0;
+			if (from_first_player)
+				player_index = PlayerIndex.One;
+			else
+				player_index = PlayerIndex.Two;
+			capabilities = GamePad.GetCapabilities(player_index);
 		}
 
 		public override void update(GameTime gametime)
 		{
-			GamePadCapabilities capabilities = GamePad.GetCapabilities(PlayerIndex.One);
 			Vector2 final_vector = past_vector;
 
 			if (capabilities.IsConnected)
 			{
-				GamePadState state = GamePad.GetState(PlayerIndex.One);
+				GamePadState state = GamePad.GetState(player_index);
 
 				final_vector.X += state.ThumbSticks.Left.X * speed;
 				final_vector.Y -= state.ThumbSticks.Left.Y * speed;
@@ -50,7 +57,7 @@ namespace Sand
 			if (current_time - last_time > basic_delay)
 			{
 				last_time = current_time;
-				Engine.entities.Add(new Bullet(position, rotation));
+				Engine.entities.Add(new Bullet(position, rotation, first_player));
 			}
 		}
 

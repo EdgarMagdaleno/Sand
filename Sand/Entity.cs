@@ -10,6 +10,7 @@ namespace Sand
 		public Vector2 position;
 		public Vector2 origin;
 		public float rotation;
+		public bool first_player;
 
 		public Entity(Texture2D texture, Vector2 position)
 		{
@@ -23,6 +24,16 @@ namespace Sand
 		{
 			sprite_batch.Draw(texture, position, null, null, origin, rotation, null, Color.White);
 		}
+
+		public bool check_collision(Entity entity)
+		{
+			if (this.first_player != entity.first_player & this.position.X < entity.position.X + entity.texture.Width & this.position.X + this.texture.Width > entity.position.X &
+   				this.position.Y < entity.position.Y + entity.texture.Height & this.texture.Height + this.position.Y > entity.position.Y)
+				return true;
+			else 
+				return false;
+		}
+
 
 		public virtual void update(GameTime gametime)
 		{

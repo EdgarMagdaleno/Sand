@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{BED614EF-3135-40EE-852C-BDCC95C8A60A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sand/Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sand/Player.cs">
     <Files>
-      <File FileName="Sand/Entity.cs" Line="12" Column="36" />
-      <File FileName="Sand/Engine.cs" Line="16" Column="42" />
-      <File FileName="Sand/Player.cs" Line="6" Column="15" />
-      <File FileName="Sand/Bullet.cs" Line="15" Column="45" />
-      <File FileName="Sand/Program.cs" Line="26" Column="24" />
+      <File FileName="Sand/Entity.cs" Line="27" Column="9" />
+      <File FileName="Sand/Engine.cs" Line="38" Column="3" />
+      <File FileName="Sand/Player.cs" Line="27" Column="4" />
+      <File FileName="Sand/Bullet.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

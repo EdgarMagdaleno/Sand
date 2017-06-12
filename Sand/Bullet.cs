@@ -9,8 +9,9 @@ namespace Sand
 		float speed;
 		Vector2 direction;
 
-		public Bullet(Vector2 position, float angle) : base(Engine.bullet_texture, position)
+		public Bullet(Vector2 position, float angle, bool from_first_player) : base(Engine.bullet_texture, position)
 		{
+			first_player = from_first_player;
 			speed = 20f;
 			rotation = angle;
 			direction = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));

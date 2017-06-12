@@ -38,7 +38,8 @@ namespace Sand
 			bullet_texture = Content.Load<Texture2D>("bullet");
 			player_texture = Content.Load<Texture2D>("player");
 
-			entities.Add(new Player(new Vector2(20, 20)));
+			entities.Add(new Player(new Vector2(20, 20), true));
+			entities.Add(new Player(new Vector2(Window.ClientBounds.Width - 20, Window.ClientBounds.Height - 20), false));
 			//TODO: use this.Content to load your game content here 
 		}
 			
@@ -47,6 +48,10 @@ namespace Sand
 			foreach (Entity e in entities.ToArray())
 			{
 				e.update(gameTime);
+
+				foreach (Entity e2 in entities.ToArray())
+					if (e != e2 & e.check_collision(e2))
+						Console.WriteLine("HIT!");
 			}
             
 			base.Update (gameTime); 
@@ -64,7 +69,7 @@ namespace Sand
            	
 			base.Draw (gameTime);
 			sprite_batch.End();
-		}
+		}			
 	}
 }
 

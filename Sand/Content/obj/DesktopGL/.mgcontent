@@ -4,7 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/home/edgar/Sand/Sand/Content/player.png</File>
-    <File>/home/edgar/Sand/Sand/Content/bullet.png</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/player.png</File>
+    <File>/home/poi/Documents/c#/Sand/Sand/Content/bullet.png</File>
   </SourceFiles>
 </SourceFileCollection>
