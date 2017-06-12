@@ -6,5 +6,6 @@
   <SourceFiles>
     <File>/home/edgar/Sand/Sand/Content/player.png</File>
     <File>/home/edgar/Sand/Sand/Content/bullet.png</File>
+    <File>/home/edgar/Sand/Sand/Content/lifebar.png</File>
   </SourceFiles>
 </SourceFileCollection>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>/home/edgar/Sand/Sand/Content/bullet.png</SourceFile>
-  <SourceTime>2017-06-11T20:35:14-07:00</SourceTime>
-  <DestFile>/home/edgar/Sand/Sand/Content/bin/Windows/bullet.xnb</DestFile>
+  <SourceFile>/home/edgar/Sand/Sand/Content/lifebar.png</SourceFile>
+  <SourceTime>2017-06-11T20:47:46-07:00</SourceTime>
+  <DestFile>/home/edgar/Sand/Sand/Content/bin/Windows/lifebar.xnb</DestFile>
   <DestTime>2017-06-11T20:48:19-07:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-06-07T12:34:46-07:00</ImporterTime>

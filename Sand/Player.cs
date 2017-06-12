@@ -13,9 +13,11 @@ namespace Sand
 		long basic_delay = 250;
 		PlayerIndex player_index;
 		GamePadCapabilities capabilities;
+		int life;
 
 		public Player(Vector2 position, bool from_first_player) : base(Engine.player_texture, position)
 		{
+			life = 100;
 			first_player = from_first_player;
 			speed = 2.0f;
 			rotation = 0f;
@@ -63,10 +65,11 @@ namespace Sand
 
 		public void calculate_rotation(Vector2 vector)
 		{
-			rotation = (float) Math.Atan2(vector.Y, vector.X);
+			rotation = (float)Math.Atan2(vector.Y, vector.X);
 		}
 
 		public override void draw(SpriteBatch sprite_batch){
+			sprite_batch.Draw(Engine.lifebar_texture, new Vector2(20 * Engine.scale.X, 20 * Engine.scale.Y), null, null, null, 0, new Vector2(Engine.screen_width / 2.05f, 1));
 			base.draw(sprite_batch);
 		}
 	}

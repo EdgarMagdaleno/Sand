@@ -14,8 +14,10 @@ namespace Sand
 		public static List<Entity> entities;
 		public static Texture2D bullet_texture;
 		public static Texture2D player_texture;
+		public static Texture2D lifebar_texture;
 		public static int screen_width;
 		public static int screen_height;
+		public static Vector2 scale;
 
 		public Engine()
 		{
@@ -28,6 +30,8 @@ namespace Sand
 			this.graphics.PreferredBackBufferWidth = screen_width;
 			this.graphics.PreferredBackBufferHeight = screen_height;
 			this.graphics.IsFullScreen = true;
+
+			scale = new Vector2(screen_width / 1920f, screen_height / 1080f);
 		}
 			
 		protected override void Initialize ()
@@ -44,6 +48,7 @@ namespace Sand
 			sprite_batch = new SpriteBatch (GraphicsDevice);
 			bullet_texture = Content.Load<Texture2D>("bullet");
 			player_texture = Content.Load<Texture2D>("player");
+			lifebar_texture = Content.Load<Texture2D>("lifebar");
 
 			start();
 		}
