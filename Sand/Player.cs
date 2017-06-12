@@ -74,7 +74,6 @@ namespace Sand
 
 			if (!first_player)
 			{
-				length = (Engine.screen_width / 2 - 40 * Engine.scale.X) * (life / 100f);
 				lifebar_position = new Vector2(Engine.screen_width - 20 - length, 20 * Engine.scale.Y);
 			}
 
