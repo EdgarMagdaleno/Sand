@@ -14,6 +14,8 @@ namespace Sand
 		public static List<Entity> entities;
 		public static Texture2D bullet_texture;
 		public static Texture2D player_texture;
+		public static int screen_width;
+		public static int screen_height;
 
 		public Engine()
 		{
@@ -21,6 +23,11 @@ namespace Sand
 			entities = new List<Entity>();
 
 			Content.RootDirectory = "Content";
+			screen_width = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+			screen_height = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+			this.graphics.PreferredBackBufferWidth = screen_width;
+			this.graphics.PreferredBackBufferHeight = screen_height;
+			this.graphics.IsFullScreen = true;
 		}
 			
 		protected override void Initialize ()
@@ -38,9 +45,13 @@ namespace Sand
 			bullet_texture = Content.Load<Texture2D>("bullet");
 			player_texture = Content.Load<Texture2D>("player");
 
+			start();
+		}
+
+		public void start()
+		{
 			entities.Add(new Player(new Vector2(20, 20), true));
-			entities.Add(new Player(new Vector2(Window.ClientBounds.Width - 20, Window.ClientBounds.Height - 20), false));
-			//TODO: use this.Content to load your game content here 
+			entities.Add(new Player(new Vector2(screen_width - 20, screen_height - 20), false));
 		}
 			
 		protected override void Update (GameTime gameTime)

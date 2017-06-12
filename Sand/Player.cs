@@ -67,7 +67,7 @@ namespace Sand
 		}
 
 		public override void draw(SpriteBatch sprite_batch){
-			sprite_batch.Draw(texture, position, null, null, origin, rotation);
+			base.draw(sprite_batch);
 		}
 	}
 }
