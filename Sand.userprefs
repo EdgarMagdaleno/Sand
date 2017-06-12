@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{BED614EF-3135-40EE-852C-BDCC95C8A60A}|Default">
-  <MonoDevelop.Ide.ItemProperties.Sand PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sand/Bullet.cs">
+    <Files>
+      <File FileName="Sand/Entity.cs" Line="12" Column="36" />
+      <File FileName="Sand/Engine.cs" Line="16" Column="42" />
+      <File FileName="Sand/Player.cs" Line="6" Column="15" />
+      <File FileName="Sand/Bullet.cs" Line="15" Column="45" />
+      <File FileName="Sand/Program.cs" Line="26" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sand.git Status">
-    <Files>
-      <File FileName="Sand\GameStart.cs" Line="14" Column="8" />
-      <File FileName="Sand\Entity.cs" Line="25" Column="4" />
-      <File FileName="Sand.git Status" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Sand PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

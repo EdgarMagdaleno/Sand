@@ -20,3 +20,7 @@
 /home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/OpenTK.dll
 /home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/NVorbis.dll
 /home/Alejanky/Projects/EdgarMagdaleno/Sand.git/Sand/bin/Debug/Lidgren.Network.dll
+/home/edgar/Sand/Sand/bin/Debug/Sand.pdb
+/home/edgar/Sand/Sand/obj/x86/Debug/Sand.pdb
+/home/edgar/Sand/Sand/bin/Debug/Content/player.xnb
+/home/edgar/Sand/Sand/bin/Debug/Content/bullet.xnb

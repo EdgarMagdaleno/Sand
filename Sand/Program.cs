@@ -23,11 +23,11 @@ namespace Sand
 	static class Program
     #endif
     {
-		private static GameStart game;
+		private static Engine game;
 
 		internal static void RunGame ()
 		{
-			game = new GameStart();
+			game = new Engine();
 			game.Run ();
 			#if !__IOS__  && !__TVOS__
 			game.Dispose ();
