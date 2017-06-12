@@ -15,14 +15,9 @@ namespace Sand
 		private int totalFrames;
 		public int width{ get; set; }
 		public int height{get;set;}
-		public float CambioX=1f;
-		public float CambioY=1f;
-		public bool algo = true;
-		public bool algo2= true;
 		public Vector2 Vec;
-
-		public AnimatedSprite(Texture2D texture, int rows, int columns)
-		{
+	
+		public AnimatedSprite(Texture2D texture, int rows, int columns){
 			Texture = texture;
 			Rows = rows;
 			Columns = columns;
@@ -32,23 +27,19 @@ namespace Sand
 			Vec= Vector2.Zero;
 		}
 
-		public void UpdateImage()
-		{
+		public void UpdateImage(){
 			currentFrame++;
 			if (currentFrame == totalFrames)
 				currentFrame = 0;
 		}
 
-		public void Draw(SpriteBatch spriteBatch ,int  x,int  y)
-		{
+		public void Draw(SpriteBatch spriteBatch ,int  x,int  y){
 			width = Texture.Width / Columns;
 			height = Texture.Height / Rows;
 			int row = (int)((float)currentFrame / (float)Columns);
 			int column = currentFrame % Columns;
-
 			Rectangle sourceRectangle = new Rectangle(width * column, height * row, width, height);
 			Rectangle destinationRectangle = new Rectangle(x, y, width, height);
-
 			spriteBatch.Begin();
 			spriteBatch.Draw(Texture, destinationRectangle, sourceRectangle, Color.White);
 			spriteBatch.End();
