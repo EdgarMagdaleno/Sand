@@ -55,8 +55,8 @@ namespace Sand
 
 		public void start()
 		{
-			entities.Add(new Player(new Vector2(20, 20), true));
-			entities.Add(new Player(new Vector2(screen_width - 20, screen_height - 20), false));
+			entities.Add(new Player(new Vector2(player_texture.Width * scale.X, player_texture.Height * scale.Y), true));
+			entities.Add(new Player(new Vector2(screen_width - player_texture.Width * scale.X, screen_height - player_texture.Height * scale.Y), false));
 		}
 			
 		protected override void Update (GameTime gameTime)
@@ -66,8 +66,8 @@ namespace Sand
 				e.update(gameTime);
 
 				foreach (Entity e2 in entities.ToArray())
-					if (e != e2 & e.check_collision(e2))
-						Console.WriteLine("HIT!");
+					if ((e.GetType() == typeof(Bullet) & e2.GetType() == typeof(Player)) & e.check_collision(e2))
+						entities.Remove(e);
 			}
             
 			base.Update (gameTime); 

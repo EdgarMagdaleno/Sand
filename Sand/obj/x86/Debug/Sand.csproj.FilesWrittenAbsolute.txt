@@ -40,3 +40,4 @@
 /home/poi/Documents/c#/Sand/Sand/bin/Debug/Sand.pdb
 /home/poi/Documents/c#/Sand/Sand/bin/Debug/Sand.exe
 /home/edgar/Sand/Sand/bin/Debug/Content/lifebar.xnb
+/home/poi/Documents/c#/Sand/Sand/bin/Debug/Content/lifebar.xnb

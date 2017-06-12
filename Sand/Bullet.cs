@@ -23,8 +23,9 @@ namespace Sand
 			base.update(gametime);
 		}
 
-		public override void draw(SpriteBatch sprite_batch)
-		{
+		public override void draw(SpriteBatch sprite_batch) {
+			if ((position.X < 0 | position.X > Engine.screen_width - texture.Width * Engine.scale.X) | (position.Y < 0 | position.Y > Engine.screen_height - texture.Height * Engine.scale.Y))
+				Engine.entities.Remove(this);
 			base.draw(sprite_batch);
 		}
 	}

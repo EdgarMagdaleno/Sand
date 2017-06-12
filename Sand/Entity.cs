@@ -22,18 +22,13 @@ namespace Sand
 			this.rotation = 0f;
 		}
 
-		public virtual void draw(SpriteBatch sprite_batch)
-		{
-			sprite_batch.Draw(texture, position, null, null, origin, rotation, Engine.scale, Color.White);
+		public virtual void draw(SpriteBatch sprite_batch) {
+			sprite_batch.Draw(texture, position, null, null, origin, rotation, Engine.scale, Color.White, SpriteEffects.None, 0);
 		}
 
-		public bool check_collision(Entity entity)
-		{
-			if (this.first_player != entity.first_player & this.position.X < entity.position.X + entity.texture.Width & this.position.X + this.texture.Width > entity.position.X &
-   				this.position.Y < entity.position.Y + entity.texture.Height & this.texture.Height + this.position.Y > entity.position.Y)
-				return true;
-			else
-				return false;
+		public bool check_collision(Entity entity) {
+			return (this.first_player != entity.first_player & this.position.X < entity.position.X + entity.texture.Width + origin.X & this.position.X + this.texture.Width + origin.X > entity.position.X &
+					this.position.Y < entity.position.Y + entity.texture.Height + origin.Y & this.texture.Height + origin.Y + this.position.Y > entity.position.Y);
 		}
 
 		public virtual void update(GameTime gametime)
